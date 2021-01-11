@@ -1,4 +1,4 @@
-import Image from "next/image";
+//import Image from "next/image";
 
 export default function PeopleSection({people}) {
   return (
@@ -22,7 +22,7 @@ function Person({ text, name, position, image }) {
           {text}
         </p>
         <a class="flex flex-wrap items-center mt-6">
-          <Image
+          <img
             alt="testimonial"
             class="inline-block object-cover object-center w-16 h-16 mb-4 rounded-full bg-4gray-100"
             objectFit="cover"

@@ -3,8 +3,8 @@ const mdx = require("@mdx-js/mdx");
 
 module.exports = {
   purge: {
-    mode: "all",
-    content: ["./src/**/*.{js,mdx}", "./next.config.js"],
+    mode: 'all',
+    content: ['./src/**/*.{js,mdx}', './next.config.js'],
     options: {
       extractors: [
         {
@@ -77,5 +77,8 @@ module.exports = {
     }),
   },
   variants: {},
-  plugins: [require("@tailwindcss/ui"), require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/ui"),
+    require("@tailwindcss/typography")
+  ],
 };

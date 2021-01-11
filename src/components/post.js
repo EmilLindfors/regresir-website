@@ -2,33 +2,9 @@ import Head from "next/head";
 import PageTitle from "@/components/page-title.js";
 import tinytime from "tinytime";
 import Link from "next/link";
-import Image from "next/image";
+//import Image from "next/image";
 import { useRouter } from "next/router";
 import { MDXProvider } from "@mdx-js/react";
-
-const people = [
-  {
-    text:
-      "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
-    name: "Stig-Erik Jakobsen",
-    position: "Project Leader",
-    image: "/Stig.png",
-  },
-  {
-    text:
-      "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
-    name: "Arnt Fløysand",
-    position: "Project Leader",
-    image: "/Arnt.png",
-  },
-  {
-    text:
-      "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
-    name: "heidi Wiig",
-    position: "Project Leader",
-    image: "/heidi.jpg",
-  },
-];
 
 const mdxComponents = {
   pre: ({ className, ...props }) => (
@@ -49,7 +25,6 @@ export default function Post({ meta, children, posts }) {
   const postIndex = posts.findIndex((post) => post.link === router.pathname);
   const previous = posts[postIndex + 1];
   const next = posts[postIndex - 1];
-  const author = people.find((x) => x.name === meta.author);
 
   return (
     <article className="xl:divide-y xl:divide-gray-200">
@@ -59,7 +34,7 @@ export default function Post({ meta, children, posts }) {
       <header className="pt-6 xl:pb-10">
         {meta.image && (
           <div class="relative flex flex-wrap my-4 w-full h-48 md:h-72 md:my-12 bg-primary rounded-lg">
-            <Image
+            <img
               className="rounded-lg object-cover object-center"
               alt="Photo by Jeswin Thomas on Unsplash"
               src={meta.image}
@@ -93,10 +68,10 @@ export default function Post({ meta, children, posts }) {
           </div>
         </div>
         <footer className="text-sm font-medium leading-5 divide-y divide-gray-200 xl:col-start-1 xl:row-start-2">
-          {meta.author && (
+          {meta.author && meta.author.map((author) => (
             <div className="py-8 container flex flex-col place-content-center text-center">
               <a class="flex flex-wrap justify-center mt-6">
-                <Image
+                <img
                   alt={author.name}
                   class="inline-block object-cover object-center w-16 h-16 mb-4 rounded-full bg-4gray-100"
                   objectFit="cover"
@@ -114,7 +89,7 @@ export default function Post({ meta, children, posts }) {
                 </span>
               </span>
             </div>
-          )}
+          ))}
           {(next || previous) && (
             <div className="space-y-8 py-8">
               {next && (
