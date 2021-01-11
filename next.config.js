@@ -99,7 +99,7 @@ module.exports = withBundleAnalyzer({
         },
       ],
     })
-    if (!options.dev && options.isServer) {
+    /*if (!options.dev && options.isServer) {
       const originalEntry = config.entry
 
       config.entry = async () => {
@@ -107,7 +107,7 @@ module.exports = withBundleAnalyzer({
         entries['./scripts/build-rss.js'] = './scripts/build-rss.js'
         return entries
       }
-    }
+    }*/
 
     return config
   },

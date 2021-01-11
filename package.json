@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export && npm run build:rss",
+    "build": "next build && next export",
     "build:rss": "node ./.next/server/scripts/build-rss.js",
     "start": "next start"
   },
