@@ -84,7 +84,7 @@ module.exports = withBundleAnalyzer({
             createLoader(function (src) {
               const content = [
                 'import Post from "@/components/post"',
-                'export { getStaticProps } from "@/get-static"',
+                'export { getStaticProps } from "@/getStaticProps"',
                 src,
                 'export default Post',
               ].join('\n')
@@ -99,7 +99,7 @@ module.exports = withBundleAnalyzer({
         },
       ],
     })
-    if (!options.dev && options.isServer) {
+    /*if (!options.dev && options.isServer) {
       const originalEntry = config.entry
 
       config.entry = async () => {
@@ -107,7 +107,7 @@ module.exports = withBundleAnalyzer({
         entries['./scripts/build-rss.js'] = './scripts/build-rss.js'
         return entries
       }
-    }
+    }*/
 
     return config
   },

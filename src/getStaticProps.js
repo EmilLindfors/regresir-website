@@ -1,4 +1,4 @@
-import getAllPostPreviews from '@/get-previews'
+import getAllPostPreviews from '@/getAllPostPreviews'
 
 export async function getStaticProps() {
   return {

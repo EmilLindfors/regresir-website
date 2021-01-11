@@ -8,7 +8,7 @@ class InlineStylesHead extends Head {
   }
 
   __getInlineStyles() {
-    const { assetPrefix, files } = this.context
+    const { assetPrefix, files } = this.context._documentProps
     if (!files || files.length === 0) return null
 
     return files
@@ -35,7 +35,15 @@ export default class Document extends NextDocument {
   render() {
     return (
       <Html lang="en">
-        <InlineStylesHead />
+        <InlineStylesHead>
+          <link
+            rel="preload"
+            href="/fonts/Inter-roman.var-latin.woff2?3.13"
+            as="font"
+            type="font/woff2"
+            crossOrigin="true"
+          />
+        </InlineStylesHead>
         <body>
           <Main />
           <NextScript />

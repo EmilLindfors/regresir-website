@@ -64,6 +64,7 @@ export default function WorkPackages({ data }) {
         <ul className="divide-y divide-gray-200">
           {workPackages.map((d) => (
             <WorkPackage
+            key={d.wpKey}
               wpKey={d.wpKey}
               title={d.title}
               text={d.text}

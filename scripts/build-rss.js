@@ -1,6 +1,6 @@
 import fs from 'fs'
 import RSS from 'rss'
-import getAllPostPreviews from '../src/get-previews'
+import getAllPostPreviews from '../src/getAllPostPreviews'
 
 const feed = new RSS({
   title: 'RegReSir Website',

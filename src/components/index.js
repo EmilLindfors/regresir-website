@@ -1,3 +1,3 @@
-export {default as FirmsSection} from "./sections/firms-section.js"
-export {default as PeopleSection} from "./sections/people-section.js"
-export {default as HeroSection} from "./sections/hero-section.js"
+export {default as FirmsSection} from "./firmsSection"
+export {default as PeopleSection} from "./peopleSection"
+export {default as HeroSection} from "./heroSection"
