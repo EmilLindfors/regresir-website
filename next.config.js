@@ -84,7 +84,7 @@ module.exports = withBundleAnalyzer({
             createLoader(function (src) {
               const content = [
                 'import Post from "@/components/post"',
-                'export { getStaticProps } from "@/get-static"',
+                'export { getStaticProps } from "@/getStaticProps"',
                 src,
                 'export default Post',
               ].join('\n')

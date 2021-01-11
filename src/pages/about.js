@@ -3,7 +3,7 @@ import { FirmsSection } from "@/components";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Head>
         <title>About – RegReSir </title>
         <meta name="about the project" content="about regresir" />
@@ -60,6 +60,6 @@ export default function Home() {
           crisis.
         </p>
       </article>
-    </>
+    </div>
   );
 }

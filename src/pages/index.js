@@ -2,46 +2,53 @@ import tinytime from "tinytime";
 import Link from "next/link";
 import Head from "next/head";
 import stigAvatar from "../img/Stig.png"
-import getAllPostPreviews from "@/get-previews";
+import getAllPostPreviews from "@/getAllPostPreviews";
 import { PeopleSection, FirmsSection, HeroSection } from "@/components";
 
-const people = [
-  {
-    text:
-      "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
-    name: "Stig-Erik Jakobsen",
-    position: "Project Leader",
-    image: stigAvatar
-  },
-  {
-    text:
-      "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
-    name: "Arnt Fløysand",
-    position: "Project Leader",
-    image: stigAvatar
-  },
-  {
-    text:
-      "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
-    name: "heidi Wiig",
-    position: "Project Leader",
-    image: stigAvatar
-  },
-];
 
 const posts = getAllPostPreviews();
 
 const postDateTemplate = tinytime("{MMMM} {DD}, {YYYY}");
 
 export default function Home() {
+  const people = [
+    {
+      text:
+        "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
+      name: "Stig-Erik Jakobsen",
+      position: "Project Leader",
+      image: stigAvatar
+    },
+    {
+      text:
+        "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
+      name: "Arnt Fløysand",
+      position: "Project Leader",
+      image: stigAvatar
+    },
+    {
+      text:
+        "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
+      name: "heidi Wiig",
+      position: "Project Leader",
+      image: stigAvatar
+    },
+  ];
+
   return (
-    <>
+    <div className="divide-y divide-gray-200">
       <Head>
-        <title>RegReSir website</title>
-        <meta
-          name="description"
-          content="A website by mohnsenteret."
-        />
+      <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@tailwindcss" />
+        <meta name="twitter:creator" content="@tailwindcss" />
+        <meta name="twitter:title" content="Blog – Tailwind CSS" />
+        <meta name="twitter:description" content="News content from the Tailwind CSS team." />
+        <meta property="og:url" content="https://blog.tailwindcss.com" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Blog – Tailwind CSS" />
+        <meta property="og:description" content="News content from the Tailwind CSS team." />
+        <title>Blog – Tailwind CSS</title>
+        <meta name="description" content="News content from the Tailwind CSS team." />
       </Head>
       <HeroSection />
       <FirmsSection />
@@ -97,6 +104,6 @@ export default function Home() {
           })}
         </ul>
       </div>
-    </>
+    </div>
   );
 }
