@@ -1,5 +1,6 @@
 const { createLoader } = require('simple-functional-loader')
 const visit = require('unist-util-visit')
+const rehypePrism = require('@mapbox/rehype-prism')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
@@ -41,7 +42,21 @@ module.exports = withBundleAnalyzer({
       options.defaultLoaders.babel,
       {
         loader: '@mdx-js/loader',
-        
+        options: {
+          rehypePlugins: [
+            rehypePrism,
+            () => {
+              return (tree) => {
+                visit(tree, 'element', (node, index, parent) => {
+                  let [token, type] = node.properties.className || []
+                  if (token === 'token') {
+                    node.properties.className = [tokenClassNames[type]]
+                  }
+                })
+              }
+            },
+          ],
+        },
       },
     ]
 
@@ -71,7 +86,7 @@ module.exports = withBundleAnalyzer({
                 'import Post from "@/components/post"',
                 'export { getStaticProps } from "@/get-static"',
                 src,
-                'export default (props) => <Post meta={meta} {...props} />',
+                'export default Post',
               ].join('\n')
 
               if (content.includes('<!--more-->')) {
@@ -84,6 +99,15 @@ module.exports = withBundleAnalyzer({
         },
       ],
     })
+    if (!options.dev && options.isServer) {
+      const originalEntry = config.entry
+
+      config.entry = async () => {
+        const entries = { ...(await originalEntry()) }
+        entries['./scripts/build-rss.js'] = './scripts/build-rss.js'
+        return entries
+      }
+    }
 
     return config
   },

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image"
+//import Image from "next/image"
 
 const workPackages = [
   {
@@ -85,7 +85,7 @@ function WorkPackage({ wpKey, title, text, rq, leader, leaderImg }) {
       className="container flex flex-col items-start py-4 mx-auto lg:py-8 md:flex-row"
     >
       <div class="lg:max-w-sm lg:w-full p-4 m-4 text-center">
-      <Image
+      <img
             alt="testimonial"
             class="inline-block object-cover object-center w-16 h-16 mb-4 rounded-full bg-4gray-100"
             objectFit="cover"

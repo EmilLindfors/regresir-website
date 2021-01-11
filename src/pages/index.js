@@ -1,6 +1,7 @@
 import tinytime from "tinytime";
 import Link from "next/link";
 import Head from "next/head";
+import stigAvatar from "../img/Stig.png"
 import getAllPostPreviews from "@/get-previews";
 import { PeopleSection, FirmsSection, HeroSection } from "@/components";
 
@@ -10,21 +11,21 @@ const people = [
       "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
     name: "Stig-Erik Jakobsen",
     position: "Project Leader",
-    image: "/Stig.png"
+    image: stigAvatar
   },
   {
     text:
       "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
     name: "Arnt Fløysand",
     position: "Project Leader",
-    image: "/Arnt.png"
+    image: stigAvatar
   },
   {
     text:
       "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
     name: "heidi Wiig",
     position: "Project Leader",
-    image: "/heidi.jpg"
+    image: stigAvatar
   },
 ];
 
@@ -36,10 +37,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Blog – Tailwind CSS</title>
+        <title>RegReSir website</title>
         <meta
           name="description"
-          content="News content from the Tailwind CSS team."
+          content="A website by mohnsenteret."
         />
       </Head>
       <HeroSection />
