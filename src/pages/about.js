@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { FirmsSection } from "@/components";
+import {partners} from "@/authors"
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <title>About – RegReSir </title>
         <meta name="about the project" content="about regresir" />
       </Head>
-      <div class="relative flex flex-wrap w-full px-10 py-24 my-12 bg-primary rounded-lg">
+      <div className="relative flex flex-wrap w-full px-10 py-24 my-12 bg-primary rounded-lg">
         <img
           class="absolute inset-0 block object-cover object-center w-full h-full border border-gray-200 rounded-lg opacity-50"
           alt="Photo by Florencia Viadana on Unsplash"
@@ -23,16 +24,20 @@ export default function Home() {
           
         </div>
       </div>
-      <FirmsSection />
-      <article class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl">
-        <p className="pt-4">
-          The Norwegian economy is facing significant challenges as a result of
+      <FirmsSection firms={partners}/>
+      <div className="flex justify-center">
+      <article class="prose prose-sm sm:prose lg:prose-lg">
+      <p className="pt-16 font-bold">
+      The Norwegian economy is facing significant challenges as a result of
           the COVID-19 crisis. In this project, we will analyse how companies,
           industries, and regions handle these challenges. We will reveal both
           how companies and industries adapt during the crisis, how policy can
           foster new adaptations, and what type of strategies companies choose
           in the longer term when the situation with a global pandemic hopefully
-          is over. A fundamental question for our analyses will be to what
+          is over.
+        </p>
+        <p className="pt-4">
+           A fundamental question for our analyses will be to what
           extent companies and industries return to the 'old' normal after the
           crisis or whether they use the crisis to develop more robust
           strategies and adaptations. Here we are particularly concerned with
@@ -60,6 +65,7 @@ export default function Home() {
           crisis.
         </p>
       </article>
+      </div>
     </div>
   );
 }

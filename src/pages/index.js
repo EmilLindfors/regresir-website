@@ -1,9 +1,9 @@
 import tinytime from "tinytime";
 import Link from "next/link";
 import Head from "next/head";
-import stigAvatar from "../img/Stig.png"
 import getAllPostPreviews from "@/getAllPostPreviews";
 import { PeopleSection, FirmsSection, HeroSection } from "@/components";
+import {partners, stig, arnt, heidi} from "@/authors"
 
 
 const posts = getAllPostPreviews();
@@ -15,23 +15,23 @@ export default function Home() {
     {
       text:
         "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
-      name: "Stig-Erik Jakobsen",
-      position: "Project Leader",
-      image: stigAvatar
+      name: stig.name,
+      position: stig.position,
+      image: stig.avatar
     },
     {
       text:
         "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
-      name: "Arnt Fløysand",
-      position: "Project Leader",
-      image: stigAvatar
+      name: arnt.name,
+      position: arnt.position,
+      image: arnt.avatar
     },
     {
       text:
         "Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant yeah. ",
-      name: "heidi Wiig",
-      position: "Project Leader",
-      image: stigAvatar
+      name: heidi.name,
+      position: heidi.position,
+      image: heidi.avatar
     },
   ];
 
@@ -51,7 +51,7 @@ export default function Home() {
         <meta name="description" content="News content from the Tailwind CSS team." />
       </Head>
       <HeroSection />
-      <FirmsSection />
+      <FirmsSection firms={partners}/>
       <PeopleSection people={people} />
 
       <div className="divide-y divide-gray-200">

@@ -35,8 +35,10 @@ export default function Post({ meta, children, posts }) {
         {meta.image && (
           <div class="relative flex flex-wrap my-4 w-full h-48 md:h-72 md:my-12 bg-primary rounded-lg">
             <img
-              className="rounded-lg object-cover object-center"
+              className="rounded-lg object-cover object-center h-48 md:h-72"
               alt="Photo by Jeswin Thomas on Unsplash"
+              height="100%"
+              width="100%"
               src={meta.image}
               layout="fill"
             />
@@ -77,7 +79,7 @@ export default function Post({ meta, children, posts }) {
                   objectFit="cover"
                   width="100%"
                   height="100%"
-                  src={author.image}
+                  src={author.avatar}
                 />
               </a>
               <span class="flex flex-col flex-grow ">
