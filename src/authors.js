@@ -26,7 +26,7 @@ import tomAvatar from './img/tom.jpg'
 import luAvatar from "./img/lu.png"
 import uiaAvatar from "./img/uiavert.png"
 import uuAvatar from "./img/uu-logo.png"
-import hvlAvatar from "./img/hvl.png"
+import hvlAvatar from "./img/HVL.png"
 import uisAvatar from "./img/uis.png"
 import manchesterAvatar from "./img/Manchester.jpg"
 import uiwAvatar from "./img/vienna.jpg"
