@@ -20,7 +20,7 @@ import stigAvatar from "./img/Stig.png"
 import sveinAvatar from './img/Svein.png'
 import tomAvatar from './img/tom.jpg'
 import marenAvatar from './img/Maren.jpg'
-import mariaAvatar from './img/maria.jpg'
+import mariaAvatar from './img/Maria.jpg'
 import marianneAvatar from './img/Marianne.jpg'
 import ingerbeateAvatar from './img/ingerbeate.png'
 import emilAvatar from './img/Emil.png'
