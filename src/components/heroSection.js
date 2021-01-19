@@ -1,4 +1,5 @@
 import Link from "next/link"
+import heroImg from '@/img/Skilt.png'
 
 export default function HeroSection(){
     return(
@@ -40,7 +41,7 @@ export default function HeroSection(){
                 </div>
             </div>
             <div className="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
-                <img className="object-cover object-center rounded-lg " alt="hero" src="https://source.unsplash.com/gEkRrGCtmW4/800x600"/>
+                <img className="object-cover object-center rounded-lg " alt="hero" src={heroImg}/>
             </div>
         </div>
     </section>

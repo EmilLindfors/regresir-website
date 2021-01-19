@@ -19,8 +19,18 @@ import siljeAvatar from './img/silje.jpg'
 import stigAvatar from "./img/Stig.png"
 import sveinAvatar from './img/Svein.png'
 import tomAvatar from './img/tom.jpg'
-
-
+import marenAvatar from './img/Maren.jpg'
+import mariaAvatar from './img/maria.jpg'
+import marianneAvatar from './img/Marianne.jpg'
+import ingerbeateAvatar from './img/ingerbeate.png'
+import emilAvatar from './img/Emil.png'
+import oysteinAvatar from './img/oystein.png'
+import odaAvatar from './img/Oda.png'
+import quanAvatar from './img/quan.jpeg'
+import jasonAvatar from './img/Jason.jpg'
+import tereseAvatar from './img/Terese.jpg'
+import alinaAvatar from './img/alina.jpg'
+import janAvatar from './img/jan.jpg'
 
 //partners
 import luAvatar from "./img/lu.png"
@@ -235,5 +245,103 @@ export const stig = {
   position: "Participant", 
   avatar: jonAvatar
   } 
+
+  //nye
   
-   
+  export const marianne = {
+    name: 'Marianne Sensier',
+    twitter: 'MSensier',
+    email: "marianne.sensier@manchester.ac.uk",
+    position: "Participant",
+    avatar: marianneAvatar,
+    }
+    
+    export const maria = {
+    name: 'Maria Tønnessen',
+    twitter: '',
+    email: "maria.tonnessen@uia.no",
+    position: "Participant",
+    avatar: mariaAvatar,
+    }
+    
+    export const maren = {
+    name: 'Maren Sogne Eriksen',
+    twitter: '',
+    email: "maren.s.eriksen@uia.no",
+    position: "Participant",
+    avatar: marenAvatar,
+    }
+    
+    export const jan = {
+    name: 'Jan Ole Rypestøl',
+    twitter: '',
+    email: "jan.o.rypestol@uia.no",
+    position: "Participant",
+    avatar: janAvatar,
+    }
+
+  export const terese = {
+  name: 'Terese Birkeland',
+  twitter: '',
+  email: "terese.birkeland@uia.no",
+  position: "Participant",
+  avatar: tereseAvatar,
+  }
+  
+  export const alina = {
+  name: 'Alina Meloyan',
+  twitter: '',
+  email: "alina.meloyan@uis.no",
+  position: "PhD Candidate",
+  avatar: alinaAvatar,
+  }
+  
+  export const xiangyu = {
+  name: 'Xiangyu Quan',
+  twitter: 'quan_xiangyu',
+  email: "xiangyu.quan@uis.no",
+  position: "PhD Candidate",
+  avatar: quanAvatar,
+  }
+  
+  export const jason = {
+  name: 'Jason Deegan',
+  twitter: 'jason_deegan',
+  email: "Jason.deegan@uis.no",
+  position: "PhD Candidate",
+  avatar: jasonAvatar,
+  }
+  
+  export const oda = {
+  name: 'Oda Camilla Rykkje',
+  twitter: '',
+  email: "oda.camilla.rykkje@hvl.no",
+  position: "PhD Candidate",
+  avatar: odaAvatar,
+  }
+  
+  export const emil = {
+  name: 'Emil Tomson Lindfors',
+  twitter: 'LindforsEmil',
+  email: "emil.tomson.lindfors@hvl.no",
+  position: "PhD Candidate",
+  avatar: emilAvatar,
+  }
+  
+  export const ingerbeate = {
+  name: 'Inger Beate Pettersen',
+  twitter: '',
+  email: "inger.beate.pettersen@hvl.no",
+  position: "Ukjent",
+  avatar: ingerbeateAvatar,
+  }
+  
+  export const oystein = {
+  name: 'Øystein Stavø Høvig',
+  twitter: '',
+  email: "oystein.stavo.hovig@hvl.no",
+  position: "Ukjent",
+  avatar: oysteinAvatar,
+  }
+  
+  
