@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { FirmsSection } from "@/components";
 import {partners} from "@/authors"
-import CristinProject from "@/components/cristinProjectDetails"
 
 export default function Home() {
   return (
@@ -65,7 +64,6 @@ export default function Home() {
           efforts that are most effective in supporting the companies during the
           crisis.
         </p>
-        <CristinProject/>
       </article>
       </div>
     </div>

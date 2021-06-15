@@ -30,21 +30,19 @@ export default function Header() {
           </a>
           <a
             href="#"
-            className="mr-5 text-sm font-semibold text-red-600 hover:text-red-900"
+            className="mr-5 text-sm font-semibold text-gray-600 hover:text-gray-900"
           >
             Publications
           </a>
-          <a
-            href="#"
-            className="mr-5 text-sm font-semibold text-red-600 hover:text-red-900"
-          >
-            Upcoming Events
-          </a>
+         
         </nav>
-        <button className="items-center px-8 py-3 mt-4 font-semibold text-primary transition duration-500 ease-in-out transform bg-white border rounded-lg lg:inline-flex lg:mt-px hover:border-blue-800 hover:bg-primary hover:text-white focus:ring focus:outline-none">
-          Newsletter
-        </button>
       </div>
     </header>
   );
+}
+
+const Newsletter = () => {
+  <button className="items-center px-8 py-3 mt-4 font-semibold text-primary transition duration-500 ease-in-out transform bg-white border rounded-lg lg:inline-flex lg:mt-px hover:border-blue-800 hover:bg-primary hover:text-white focus:ring focus:outline-none">
+  Newsletter
+</button>
 }

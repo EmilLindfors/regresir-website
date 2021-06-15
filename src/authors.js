@@ -19,6 +19,7 @@ import siljeAvatar from './img/silje.jpg'
 import stigAvatar from "./img/Stig.png"
 import sveinAvatar from './img/Svein.png'
 import tomAvatar from './img/tom.jpg'
+import alinaAvatar from './img/alina.jpg'
 
 
 
@@ -75,6 +76,14 @@ export const uom = {
 
 
 export const partners = [hvl, lu, uia,uis, uom, uu, uiw]
+
+export const alina = { 
+  name: 'Alina Meloyan', 
+  twitter: "", 
+  email: "%20alina.meloyan@uis.no", 
+  position: "Participant", 
+  avatar: alinaAvatar
+  }
 
 export const stig = { 
   name: 'Stig-Erik Jakobsen', 

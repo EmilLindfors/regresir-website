@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { jarle, arne, stig, marte, lars, silje, tom, ron, svein, emelie, michaela, heidi, bjorn, rune, ragnar, markus, arnt, jon, elvira } from '@/authors'
+import { alina, jarle, arne, stig, marte, lars, silje, tom, ron, svein, emelie, michaela, heidi, bjorn, rune, ragnar, markus, arnt, jon, elvira } from '@/authors'
 
 const workPackages = [
   {
@@ -16,7 +16,7 @@ const workPackages = [
     wpKey: 'WP2',
     title: 'Sustainable restructuring in regions',
     leader: arne,
-    participants: [rune, svein, emelie],
+    participants: [rune, svein, emelie, alina],
     expert: michaela,
     rq:
       'What regional-specific conditions, actors and activity, influence on to what extent regions have ‘bounced back’ to ‘normal industry practice’ or ‘bounced forward’ towards more economically sound, environmentally friendly and socially inclusive industrial activities?',
