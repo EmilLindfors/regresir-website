@@ -47,12 +47,11 @@ export default function Home() {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Blog – Tailwind CSS" />
         <meta property="og:description" content="News content from the Tailwind CSS team." />
-        <title>Blog – Tailwind CSS</title>
+        <title>RegReSir - Regional Resilience and Sustainable Industrial Restructuring</title>
         <meta name="description" content="News content from the Tailwind CSS team." />
       </Head>
       <HeroSection />
       <FirmsSection firms={partners}/>
-      <PeopleSection people={people} />
 
       <div className="divide-y divide-gray-200">
         <div className="pt-6 pb-8 space-y-2 md:space-y-5">

@@ -21,8 +21,8 @@ const tokenClassNames = {
 
 module.exports = withBundleAnalyzer({
   pageExtensions: ['js', 'jsx', 'mdx'],
-  experimental: {
-    modern: true,
+  images: {
+    disableStaticImages: true
   },
   webpack: (config, options) => {
     config.module.rules.push({

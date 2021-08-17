@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import { jarle, arne, stig, marte, lars, silje, tom, ron, svein, emelie, michaela, heidi, bjorn, jan, rune, ragnar, markus, arnt, jon, elvira, marianne, maria, maren, terese } from '@/authors'
+import { alina, jarle, arne, stig, marte, lars, silje, tom, ron, svein, emelie, michaela, heidi, bjorn, rune, ragnar, markus, arnt, jon, elvira } from '@/authors'
+
 
 const workPackages = [
   {
@@ -16,7 +17,7 @@ const workPackages = [
     wpKey: 'WP2',
     title: 'Sustainable restructuring in regions',
     leader: arne,
-    participants: [rune, svein, emelie, maria, maren],
+    participants: [rune, svein, emelie, alina],
     expert: michaela,
     rq:
       'What regional-specific conditions, actors and activity, influence on to what extent regions have ‘bounced back’ to ‘normal industry practice’ or ‘bounced forward’ towards more economically sound, environmentally friendly and socially inclusive industrial activities?',
@@ -90,7 +91,6 @@ function Person({ name, avatar, twitter }) {
       <img
         alt={name}
         className="inline-block object-cover object-center w-16 h-16 mb-4 rounded-full bg-4gray-100"
-        objectFit="cover"
         width="100%"
         height="100%"
         src={avatar}

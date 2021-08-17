@@ -39,7 +39,7 @@ import uuAvatar from "./img/uu-logo.png"
 import hvlAvatar from "./img/HVL.png"
 import uisAvatar from "./img/uis.png"
 import manchesterAvatar from "./img/Manchester.jpg"
-import uiwAvatar from "./img/vienna.jpg"
+import uiwAvatar from "./img/uiv.png"
 
 export const uu = {
   name: "University of Utrecht",
@@ -85,6 +85,14 @@ export const uom = {
 
 
 export const partners = [hvl, lu, uia,uis, uom, uu, uiw]
+
+export const alina = { 
+  name: 'Alina Meloyan', 
+  twitter: "", 
+  email: "%20alina.meloyan@uis.no", 
+  position: "Participant", 
+  avatar: alinaAvatar
+  }
 
 export const stig = { 
   name: 'Stig-Erik Jakobsen', 

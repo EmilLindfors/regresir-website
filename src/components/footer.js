@@ -21,16 +21,11 @@ export default function Footer() {
             </a>
             <a
               href="#"
-              className="justify-center mr-5 text-sm text-center text-red-600 hover:text-red-900"
+              className="justify-center mr-5 text-sm text-center text-gray-600 hover:text-gray-900"
             >
               Publications
             </a>
-            <a
-              href="#"
-              className="justify-center mr-5 text-sm text-center text-red-600 hover:text-red-900"
-            >
-                 Upcoming Events
-            </a>
+         
           </div>
           <div className="inline-flex items-center justify-center md:justify-start ">
             <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">

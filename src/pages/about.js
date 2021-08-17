@@ -11,14 +11,14 @@ export default function Home() {
       </Head>
       <div className="relative flex flex-wrap w-full px-10 py-24 my-12 bg-primary rounded-lg">
         <img
-          class="absolute inset-0 block object-cover object-center w-full h-full border border-gray-200 rounded-lg opacity-50"
+          className="absolute inset-0 block object-cover object-center w-full h-full border border-gray-200 rounded-lg opacity-50"
           alt="Photo by Florencia Viadana on Unsplash"
           src="https://source.unsplash.com/9z3LiQeBY_o/1024x768"
         />
-        <div class="relative z-10 w-full text-left lg:text-center">
-          <h1 class="mb-6 text-2xl font-semibold tracking-tighter text-white sm:text-6xl title-font">
+        <div className="relative z-10 w-full text-left lg:text-center">
+          <h1 className="mb-6 text-2xl font-semibold tracking-tighter text-white sm:text-6xl title-font">
             Researching the economic effects
-            <br class="" />
+            <br className="" />
             of the COVID-19 crisis
           </h1>
           
