@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import { alina, jarle, arne, stig, marte, lars, silje, tom, ron, svein, emelie, michaela, heidi, bjorn, rune, ragnar, markus, arnt, jon, elvira } from '@/authors'
 
+
 const workPackages = [
   {
     wpKey: 'WP1',
     title: 'The uneven effects of the crisis on regions',
     leader: jarle,
-    participants: [silje, tom],
+    participants: [silje, tom, marianne],
     expert: ron,
     rq: 'What is the ability of Norwegian regions to absorb economic shocks?',
     text:
@@ -27,7 +28,7 @@ const workPackages = [
     wpKey: 'WP3',
     title: 'Sustainable restructuring in natural resource-based industries',
     leader: marte,
-    participants: [bjorn, ragnar, heidi],
+    participants: [bjorn, ragnar, heidi, jan],
     expert: markus,
     rq:
       'How has the crisis induced structural changes in the investment, market orientation, technology advancement and job creation of resource-based industries?',
@@ -38,7 +39,7 @@ const workPackages = [
     wpKey: 'WP4',
     title: 'Innovation policy for sustainable restructuring',
     leader: lars,
-    participants: [arnt, jon],
+    participants: [arnt, jon, terese],
     expert: elvira,
     rq:
       'How does innovation and industrial policy in Norway contribute to sustainable restructuring and resilience-building of regions in response to the crisis? 2) How can regional innovation policy in Norway foster adaptation and adaptability of regions? Can this dual objective be reconciled or are there inherent tensions and trade-offs?',
