@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { alina, jarle, arne, stig, marte, lars, silje, tom, ron, svein, emelie, michaela, heidi, bjorn, rune, ragnar, markus, arnt, jon, elvira } from '@/authors'
+import { marianne, jan, terese, alina, jarle, arne, stig, marte, lars, silje, tom, ron, svein, emelie, michaela, heidi, bjorn, rune, ragnar, markus, arnt, jon, elvira } from '@/authors'
 
 
 const workPackages = [
@@ -127,15 +127,15 @@ function WorkPackage({ wpKey, title, text, rq, leader, participants, expert }) {
       className="container flex flex-col items-start py-4 mx-auto lg:pb-8 md:flex-row"
     >
       <div className="flex flex-col justify-center lg:max-w-sm lg:w-full  pl-4 md:pl-12 lg:pl-24">
-        <span class="mb-1 text-sm font-bold font-medium text-secondary title-font">WP Leader</span>
+        <span className="mb-1 text-sm font-bold font-medium text-secondary title-font">WP Leader</span>
         <Person name={leader.name} avatar={leader.avatar} twitter={leader.twitter} />
         {participants && (
-          <span class="mt-4 mb-1 text-sm font-bold font-medium text-secondary title-font">
+          <span className="mt-4 mb-1 text-sm font-bold font-medium text-secondary title-font">
             Participants
           </span>
         )}
         {participants &&
-          participants.map((p) => <Person name={p.name} avatar={p.avatar} twitter={p.twitter} />)}
+          participants.map((p, i) => <Person key={i} name={p.name} avatar={p.avatar} twitter={p.twitter} />)}
         {expert && (
           <span class="mt-4 mb-1 text-sm font-bold font-medium text-secondary title-font">
             International Expert
@@ -144,13 +144,13 @@ function WorkPackage({ wpKey, title, text, rq, leader, participants, expert }) {
         {expert && <Person name={expert.name} avatar={expert.avatar} twitter={expert.twitter} />}{' '}
       </div>
       <div className="w-full pt-0 mb-4 lg:flex-grow">
-        <h3 class="mb-1 text-xs font-medium tracking-widest text-secondary title-font">
+        <h3 className="mb-1 text-xs font-medium tracking-widest text-secondary title-font">
           {wpKey} - {title}
         </h3>
-        <h1 class="mb-8 text-lg font-bold tracking-tighter text-center text-primary lg:text-left lg:text-xl title-font">
+        <h1 className="mb-8 text-lg font-bold tracking-tighter text-center text-primary lg:text-left lg:text-xl title-font">
           {rq}
         </h1>
-        <p class="mb-8 text-base leading-relaxed text-center text-gray-700 lg:text-left lg:text-1xl">
+        <p className="mb-8 text-base leading-relaxed text-center text-gray-700 lg:text-left lg:text-1xl">
           {text}
         </p>
       </div>

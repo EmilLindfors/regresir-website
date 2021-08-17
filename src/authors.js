@@ -86,13 +86,7 @@ export const uom = {
 
 export const partners = [hvl, lu, uia,uis, uom, uu, uiw]
 
-export const alina = { 
-  name: 'Alina Meloyan', 
-  twitter: "", 
-  email: "%20alina.meloyan@uis.no", 
-  position: "Participant", 
-  avatar: alinaAvatar
-  }
+
 
 export const stig = { 
   name: 'Stig-Erik Jakobsen', 
