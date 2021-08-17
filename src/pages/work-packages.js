@@ -90,7 +90,6 @@ function Person({ name, avatar, twitter }) {
       <img
         alt={name}
         className="inline-block object-cover object-center w-16 h-16 mb-4 rounded-full bg-4gray-100"
-        objectFit="cover"
         width="100%"
         height="100%"
         src={avatar}
